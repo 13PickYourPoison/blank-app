@@ -27,9 +27,9 @@ for file, name in file_dict.items():
 
 #if estimate_summary is not None:
     # Read the CSV file
-    df = pd.read_csv(estimate_summary)
+ #   df = pd.read_csv(estimate_summary)
     
     # Save the dataframe to session state so it persists between reruns
-    st.session_state['estimate_data'] = df
+ #   st.session_state['estimate_data'] = df
     
-    st.success("File successfully uploaded!")
+  #  st.success("File successfully uploaded!")
