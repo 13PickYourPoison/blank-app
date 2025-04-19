@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from database import init_db, save_to_table, load_from_table
 
+init_db()
 
 st.title("GreenForce 1")
 
@@ -20,7 +21,7 @@ file_dict = {
     'cancel_report_25': cancel_report_25
 }
 
-# Check if files are uploaded
+'''# Check if files are uploaded
 for name, file in file_dict.items():
     if file is not None:
         # Read the CSV into a dataframe
@@ -33,3 +34,4 @@ for name, file in file_dict.items():
         st.success(f"{name} uploaded successfully!")
         st.write(f"Preview of {name}:")
         st.dataframe(df.head())
+        '''
